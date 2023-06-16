@@ -36,7 +36,7 @@ section:nth-child(odd){
 }
 
 .home-information h1 {
-  font-size: 40px;
+  font-size: 50px;
   padding: 20px 0;
 }
 
@@ -53,6 +53,42 @@ section:nth-child(odd){
   color: #1f242d;
   border-style: none;
   border-radius: 30px;
+}
+
+/*=============== About section =================*/
+.about{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-picture{
+  width: 550px;
+  margin-right: 120px ;
+  margin-left: 50px;
+}
+
+.about-information{
+  flex: 2;
+}
+
+.about-information h1{
+  font-size: 50px;
+}
+
+.about-information h2{
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.about-information p{
+  font-size: 25px;
+  line-height: 43px;
+}
+
+.about-information span{
+  color: var(--theme-color);
 }
 
 /*=============== SKILL section =================*/
