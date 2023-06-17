@@ -53,6 +53,7 @@ section:nth-child(odd){
   color: #1f242d;
   border-style: none;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 /*=============== About section =================*/

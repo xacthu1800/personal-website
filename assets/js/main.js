@@ -8,11 +8,6 @@ window.onscroll = () => {
     let height = sec.offsetHeight ;
     let id = sec.getAttribute('id');
     
-    console.log(height);
-
-      console.log(`top: ${top}`);
-      console.log(`offset: ${offset}`);
-      console.log(`offset+ height: ${offset + height}`);
     if(top >= offset && top < offset + height){
       navLinks.forEach(links => {
         links.classList.remove('active');
@@ -22,4 +17,18 @@ window.onscroll = () => {
   });
 }
 
-
+/*========skill programming language ======= */
+let langHTML = '';
+console.log(programLang[0]);
+programLang.forEach((plang)=>{
+  langHTML += `
+    <div class="img-box grid-item">
+      <img src="assets/icon/${plang.image}" class="skill-icon">
+      <div class="tooltip">
+        ${plang.lang}
+      </div>
+    </div>          
+    `    
+  ;
+})
+document.querySelector('.grid-content').innerHTML = langHTML;
