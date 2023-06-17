@@ -5,27 +5,25 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
+  ::-webkit-scrollbar{
+    width: 0.25rem;
+  }
+
+  ::-webkit-scrollbar-track{
+    background: #1e1e24;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background: var(--theme-color);
+  }
 }
 
 :root{
   --theme-color: #0ef;
 
-  --lang-html: 90%;
-  --lang-css: 60%;
-  --lang-js: 50%;
-  --lang-asp:10%;
-}
-
-body::-webkit-scrollbar{
-  width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track{
-  background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb{
-  background: var(--theme-color);
+  --lang-vietnam: 100%;
+  --lang-english: 76.5%;
 }
 
 li{

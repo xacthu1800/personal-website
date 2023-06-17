@@ -92,20 +92,46 @@ section:nth-child(odd){
 }
 
 /*=============== SKILL section =================*/
-.skill h3{
-  margin: 5px;
+.skill-container-grid{
+  width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  
+  column-gap: 20px;
+  row-gap: 50px;
 }
 
-.skill h1{
+.grid-item {
+  justify-self: center; 
+  align-self: center; 
+}
+
+.grid-container{
+  background-color: lightcoral;
+  height:  400px;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.grid-title{
+  display: block;
+  font-size: 30px;
   text-align: center;
+  padding: 30px 20px ;
 }
 
-.skill{
-  width: 500px;
-  margin: 60px auto;
-  color: #fff;
-  padding: 20px;
-  box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+.grid-content{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr ;
+
+ column-gap: 20px;
+ row-gap: 50px;
+}
+
+.skill-icon{
+  width: 100px;
 }
 
 .skill li{
@@ -113,7 +139,40 @@ section:nth-child(odd){
   padding: 10px;
 }
 
-.skill-bar {
+.grid-container li,
+.grid-container .img-box{
+  position: relative;
+}
+
+li h3{
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 25px;
+}
+
+li .tooltip,
+.img-box .tooltip
+{
+  position: absolute;
+  font-size: 18px;
+  top: 30px;
+  right: 10px;
+  display: flex;
+  background-color: grey;
+  color:white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+li:hover .tooltip,
+.img-box:hover .tooltip
+{
+  opacity: 1;
+}
+
+.skill-bar{
   background: hsl(220, 41%, 11%);
   display: block;
   height: 20px;
@@ -133,59 +192,30 @@ section:nth-child(odd){
   float: left;
   background: linear-gradient(135deg,rgba(236,0,240,1)0%,rgba(252,103,103,1)100%);
 }
-
-.html{
-  width: var(--lang-html);
-  animation: html 3s;
+.vietnamese{
+  width: var(--lang-vietnam);
+  animation: vietnamese 3s;
 }
 
-.css{
-  width: var(--lang-css);
-  animation: css 3s;
+.english{
+  width: var(--lang-english);
+  animation: english 3s;
 }
 
-.javascipt{
-  width: var(--lang-js);
-  animation: javascipt 3s;
-}
-
-.ASP{
-  width: var(--lang-asp);
-  animation: ASP 3s;
-}
-
-@keyframes html{
+@keyframes vietnamese{
   0%{
     width: 0%;
   }
   100%{
-    width: var(--lang-html);
+    width: var(--lang-vietnam);
   }
 }
-@keyframes css{
+
+@keyframes english{
   0%{
     width: 0%;
   }
   100%{
-    width: var(--lang-css);
+    width: var(--lang-english);
   }
 }
-@keyframes javascipt{
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: var(--lang-js);
-  }
-}
-@keyframes ASP{
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: var(--lang-asp);
-  }
-}
-
-
-
