@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="assets/css/general.css"></link>
     <link rel="stylesheet" href="assets/css/header.css"></link>
     <link rel="stylesheet" href="assets/css/main.css"></link>
+
     <title>portfolio</title>
   </head>
   <body>
     <!-- ============ Header ==================-->
     <header>
-      <a href="#" class="logo">ActiveLink</a>
+      <a href="#" class="logo">Welcome !</a>
 
       <nav>
         <a href="#home" class="active">home</a>
@@ -81,7 +82,6 @@
     <!-- ============ Portfolio ==================-->  
       <section id="portfolio">
         <div class="portfolio">
-          <h2>Latest <span>Project</span></h2>
           <div class="portfolio-grid">
             <div class="portfolio-box">
               <img src="assets/img/kubo.webp">
@@ -116,12 +116,26 @@
       </section>
     <!-- ============ Contact ==================-->  
       <section id="contact">
-
+        <div class="contact-left">
+          <div class="contact-contain"><img src="assets/icon/map.svg" class="icon"><div>Ho Chi Minh city,Thu Duc City(District 9) </div></div>
+          <div class="contact-contain"><img src="assets/icon/envelope-fill.svg" class="icon"><div> Contact:Nguyenvanbin011003@gmail.com </div></div>
+          <div class="contact-contain"><img src="assets/icon/phone.svg" class="icon"><div>0932960437</div></div>
+          <div class="contact-contain"><img src="assets/icon/clock.svg" class="icon"><div>Mon - Fri 9:00 AM to 5:00 PM</div></div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" action="" method="post">
+            <input type="text" name="name" class="text-box" placeholder="your name" required>
+            <input type="email" name="email" class="text-box" placeholder="Your email" required>
+            <textarea name="message" class="message"  placeholder="Your message" required></textarea>
+            <input type="submit" name="submit" class="submit" class="send-btn" value="Submit"> 
+          </form>
+        </div>
       </section>     
       
     </main>
 
     <script src="assets/js/language.js"></script>
     <script src="assets/js/main.js"></script>
+    
   </body>
 </html>

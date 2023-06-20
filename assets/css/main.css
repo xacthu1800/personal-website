@@ -224,15 +224,10 @@ li:hover .tooltip,
 /*=========== portfolio section ==============*/
 .portfolio{
   width: 1400px;
+  margin-top: 30px;
 }
 
-.portfolio h2{
-  display: block;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
+
 
 .portfolio span{
   color: var(--theme-color);
@@ -289,4 +284,65 @@ li:hover .tooltip,
 
 .portfolio-box:hover .portfolio-layer{
   transform: translateY(0);
+}
+
+/*=========== contact section =============*/
+
+.contact-contain{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 15px;
+}
+
+.contact-contain div{
+  font-size: 20px;
+}
+
+.contact-left{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.contact-left .icon{
+  display: inline-block;
+  width: 25px;
+  margin-right: 10px;
+  background-color: var(--theme-color);
+  padding: 4px;
+  border-radius: 15px;
+}
+
+.contact-right{
+  
+}
+
+.text-box, .message, .submit{
+ margin: 0 0 20px 0;
+ border-style: none;
+ padding: 15px;
+ background-color: rgb(216, 223, 233);
+ color: rgb(7, 6, 6);
+ border-radius: 10px;
+}
+
+.submit{
+  display: block;
+  width: 100px;
+  height: 40px;
+  padding-bottom: 35px;
+  cursor: pointer;
+}
+
+.text-box{
+  font-size: 20px;
+  width: 40%;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+.message{
+  width: 82%;
+  height: 300px;
+  font-size: 20px;
 }
